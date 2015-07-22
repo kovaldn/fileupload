@@ -1,1 +1,3 @@
-document.write('ПРИВЕТ! Я РАБОТАЮ!!!!');
+$(function() {
+	console.log('on main page');
+});
