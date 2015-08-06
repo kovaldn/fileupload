@@ -1,4 +1,8 @@
-> КАК УСТАНОВИТЬ МОЙ ПРОЕКТ
+> О ЧЕМ РЕЧЬ
+
+Это мой boilerplate - простой шаблон, чтобы быстро начать писать новый проект.
+
+> КАК УСТАНОВИТЬ
 
 1. git clone https://github.com/kovaldn/dplate.git site
 2. cd site
