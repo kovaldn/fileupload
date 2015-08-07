@@ -2,7 +2,7 @@
 
 Данный пример демонстрирует frontend часть реализиции добавления файлов на сервер
 
-![alt-текст](https://github.com/kovaldn/fileupload/src/img/screen.png "FILE UPLOAD")
+![alt-текст](https://github.com/kovaldn/fileupload/blob/master/src/img/screen.png "FILE UPLOAD")
 
 1. валидация и вывод сообщения при помощи тултипа 
 2. очистка сообщений об ошибках при добавлении файла
