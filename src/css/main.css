@@ -1,0 +1,99 @@
+/*========= Оформление ======*/
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+h1{
+	margin: 0 0 20px 0;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.wrapper{
+	width: 800px;
+	padding: 20px;
+	margin: 10px 10px 80px;
+	border: 2px dashed black;
+}
+.subheader{
+	margin: 0 0 20px 0;
+}
+.label{
+	font-family: 'Arial';
+	color: #58697a;
+	font-size: 18px;
+}
+
+/*========= Оформление конец ======*/
+
+input, textarea, button {
+	outline: none;
+}
+.input {
+	display: block;
+	height: 41px;
+	color: #48cbe8;
+	background-color: #fff;
+	border: 1px solid rgb(72, 203, 232);
+	border-radius: 4px;
+	outline: none;
+}
+.input, .textarea{
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	font-size: 12px;
+	width: 100%;
+	padding: 12px 12px;
+}
+.form-group {
+	margin-bottom: 12px;
+}
+.has-error{
+	background-color: #fad2d1 !important;
+	border-color: #f97e76 !important;
+}
+.has-success{
+	background-color: none;
+	border-color: #3c763d;
+}
+
+/* _____________ // file upload _________ */
+.fileupload-wrapper {
+  width: 100%;
+  position: relative;
+}
+.fileupload-lable{
+	display: block;
+  width: 52px;
+  height: 41px;
+	position: absolute;
+  right: 0;
+	background: url(../img/upload-icon.png) 10px 7px no-repeat;
+	background-color: #48cbe8;
+	border-radius: 0 4px 4px 0;
+}
+.fileupload{ /* хак, взятый из html5boilerplate */
+	border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* _____________ // file upload end _________ */
+
+/* _____________ тултипы _________ */
+.qtip-mystyle{
+	background-color: #f97e76;
+	border-color: #f97e76;
+	font-family: 'Arial';
+	color: #ffffff;
+	font-size: 13px;
+}
+/* _____________ // тултипы ______ */

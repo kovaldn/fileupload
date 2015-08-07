@@ -2,5 +2,8 @@
   "devDependencies": {
     "browser-sync": "^2.7.13",
     "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "qtip2": "^2.2.0"
   }
 }
