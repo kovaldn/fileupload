@@ -15,7 +15,8 @@ var addProject = (function (){
 	// Изменили файл аплоад (добавили файл в файлаплоад)
 	var _changefileUpload = function (){
 		var input = $(this), // инпут type="file"
-				name = input[0].files[0].name; // имя загруженного файла
+				name = input.val(); // имя загруженного файла
+				name = name.replace(/c:\\fakepath\\/gmi, "");
 		$('#filename')
 			.val(name) // 
 			.trigger('hideTooltip')
