@@ -1,52 +1,50 @@
 <html lang="ru-RU">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- SEO -->
-	<meta name="description" content="loftblog app">
-	<meta name="keywords" content="loftblog">
-	<meta name="author" content="Kovalchuk Dima">
-	<title>File Upload</title>
-	<!-- CSS -->
-	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
-	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
-	<link rel="stylesheet" href="css/main.css">
-	<!-- modernizr -->
-	<script src="bower/modernizr/modernizr.js"></script>
-</head>
-<body>
-	<!--[if lt IE 7]>
-	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
-	<![endif]-->
-	<!-- JS -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO -->
+        <meta name="description" content="loftblog app">
+        <meta name="keywords" content="loftblog">
+        <meta name="author" content="Kovalchuk Dima">
+        <title>File Upload</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- modernizr -->
+        <script src="bower/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+        <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+        <![endif]-->
+        <!-- JS -->
 
-	<div class="container">
-		<h1>Загрузка картинок</h1>
-		<div class="wrapper">
-			<h2 class="subheader">Пример</h2>
-				<form id="add-new-project" method="POST" action="./actions/add-project.php">
-					<div class="form-group">						
-						<div class="fileupload-wrapper" id="uploadfile">
-							<span class="label">Картинка проекта</span>
-							<label class="fileupload-lable">
-								<input id="fileupload" class="fileupload" type="file" name="files[]">
-								<input id="fileurl" type="hidden" name="fileurl">
-							</label>
-							<input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" qtip-position="left">
-						</div>
-					</div>
-					<button type="submit">Добавить картинку</button>
-				</form>
-		</div>
-	</div>
+        <div class="container">
+            <h1>Загрузка картинок</h1>
+            <div class="wrapper">
+                <h2 class="subheader">Пример</h2>
+                <form id="add-new-project" method="POST" action="./actions/add-project.php">
+                    <div class="form-group">						
+                        <div class="fileupload-wrapper" id="uploadfile">
+                            <span class="label">Картинка проекта</span>
+                            <label class="fileupload-lable">
+                                <input id="fileupload" class="fileupload" type="file" name="files[]">
+                                <input id="fileurl" type="hidden" name="fileurl">
+                            </label>
+                            <input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" qtip-position="left">
+                        </div>
+                    </div>
+                    <button type="submit">Добавить картинку</button>
+                </form>
+            </div>
+        </div>
 
-	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="js/console-ie8.js"></script>
-	<script src="js/validate.js"></script>
-	<script src="js/main.js"></script>
+        <script src="bower/jquery/dist/jquery.js"></script>
+        <script src="bower/qtip2/jquery.qtip.js"></script>
+        <script src="js/console-ie8.js"></script>
+        <script src="js/validate.js"></script>
+        <script src="js/main.js"></script>
 
-</body>
+    </body>
 </html>
-
-</head>
