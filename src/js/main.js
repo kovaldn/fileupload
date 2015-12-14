@@ -6,6 +6,11 @@ var addProject = (function (){
 		_setUpListners();
   };
 
+  	// Получаем название файла из пути
+	var _getNameFromPath = function (path) {
+		return path.replace(/\\/g, '/').replace(/.*\//, '');
+	};
+
   // Прослушка событий
 	var _setUpListners = function (){
 		$('#add-new-project').on('submit', _addProject); // добавление проекта
@@ -15,7 +20,8 @@ var addProject = (function (){
 	// Изменили файл аплоад (добавили файл в файлаплоад)
 	var _changefileUpload = function (){
 		var input = $(this), // инпут type="file"
-				name = input[0].files[0].name; // имя загруженного файла
+			name = _getNameFromPath(input.val()); // имя загруженного файла
+
 		$('#filename')
 			.val(name) // 
 			.trigger('hideTooltip')
@@ -27,7 +33,7 @@ var addProject = (function (){
 	      ev.preventDefault();
 
 	      var form = $(this),
-	          url = './actions/add-project.php',
+	          url = $(this).attr('action'),
 	          defObject = _ajaxForm(form, url);
 
 	      if (defObject) {
